@@ -1,0 +1,10 @@
+<div class="container" *ngIf="myWeather">
+  <h1>{{myWeather.city}}</h1>
+  <h2>{{myWeather.temp}}</h2>
+  <div class="obrazok">
+    <img src="https://openweathermap.org/img/w/{{myWeather.icon}}.png">
+  </div>
+  <h3>{{myWeather.weatherKind}}</h3>
+  <h4>Maximálna teplota: {{myWeather.tempMax}} °c</h4>
+  <h4>Minimálna teplota: {{myWeather.tempMin}} °c</h4>
+</div>
